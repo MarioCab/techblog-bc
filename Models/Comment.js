@@ -24,7 +24,13 @@ Comment.init({
     },
   },
   text: {
-      type: DataTypes.STRING,
-      allowNull: false
-  }
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  sequelize,
+  freezeTableName: true,
+  underscored: true,
+  modelName: "comment",
 });
+
+module.exports = Comment;
