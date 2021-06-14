@@ -1,0 +1,16 @@
+body {
+  background-color: burlywood;
+}
+
+#nav-bar {
+  border-bottom: thin solid black;
+  font-size: larger;
+  font-weight: bold;
+  background-color: peachpuff;
+}
+
+.nav-link {
+  background-color: peachpuff;
+  color: black;
+  border-right: thin solid black
+}
