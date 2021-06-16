@@ -1,4 +1,4 @@
-const { Comment } = require("../Models/Comment");
+const { Comment } = require("../Models");
 
 const fakeComments = [
   {

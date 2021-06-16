@@ -1,4 +1,4 @@
-const { Posts } = require("../Models/Posts");
+const { Posts } = require("../Models");
 
 const testPosts = [
   {

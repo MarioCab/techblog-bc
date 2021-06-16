@@ -1,13 +1,15 @@
-const { User } = require("../Models/User");
+const { User } = require("../Models");
 
 const primaryUserData = [
   {
-    userName: "mariocab",
+    username: "mariocab",
     password: "creator",
+    email: "creator@me.com",
   },
   {
-    userName: "jessback",
+    username: "jessback",
     password: "helper",
+    email: "helper@her.com",
   },
 ];
 
