@@ -12,5 +12,21 @@ body {
 .nav-link {
   background-color: peachpuff;
   color: black;
-  border-right: thin solid black
+  border-right: thin solid black;
+}
+
+.card {
+  padding: 5px;
+  margin: 25px;
+}
+
+#header {
+  align-content: center;
+}
+
+#login-form,
+#signup-form {
+  background-color: lightgrey;
+  padding: 10px;
+  margin: 25px;
 }
