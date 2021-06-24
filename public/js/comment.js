@@ -14,7 +14,7 @@ async function commentFormHandler(event) {
       method: "POST",
       body: JSON.stringify({
         post_id,
-        comment_text,
+        text,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -24,7 +24,7 @@ async function commentFormHandler(event) {
     if (response.ok) {
       document.location.reload();
     } else {
-      alert(response.statusText);
+      alert("did ya hit this error son?");
     }
   }
 }

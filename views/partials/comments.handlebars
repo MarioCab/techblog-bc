@@ -1,12 +1,13 @@
 <div class="comments">
   {{#each this}}
+  <h4>Comments:</h2>
     <div class="card">
       <section class="comment comment-body card-body">
         <div class="text">
           {{text}}
         </div>
-        <div class="meta">
-          -{{user.username}},
+        <div class="meta" id="comment-author">
+          -{{user.username}}
         </div>
       </section>
     </div>

@@ -2,11 +2,11 @@
 
 {{#if loggedIn}}
 <form class="comment-form">
-  <div>
+  <div id="comment-input">
     <textarea name="comment-body"></textarea>
   </div>
 
-  <div>
+  <div id="comment-submit">
     <button type="submit">Comment</button>
   </div>
   
@@ -16,5 +16,5 @@
 {{> comments post.comments}}
 
 {{#if loggedIn}}
-<script src="/public/js/comment.js"></script>
+<script src="/js/comment.js"></script>
 {{/if}}
