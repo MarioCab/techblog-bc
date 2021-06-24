@@ -7,7 +7,7 @@ const primaryUserData = [
     email: "creator@me.com",
   },
   {
-    username: "jessback",
+    username: "jessbeck",
     password: "helper",
     email: "helper@her.com",
   },

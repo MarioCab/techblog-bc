@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const { User } = require("../../Models");
 
-// CREATE new user
 router.post("/", async (req, res) => {
   try {
     console.log(req.body); //Delete After
@@ -48,6 +47,7 @@ router.post("/login", async (req, res) => {
       res
         .status(200)
         .json({ user: dbUserData, message: "You are now logged in!" });
+      console.log("you are now logged in");
     });
   } catch (err) {
     console.log(err);
