@@ -10,7 +10,6 @@ const routes = require("./controllers");
 const sequelize = require("./config/connection");
 
 const app = express();
-const PORT = process.env.PORT || 3006;
 
 const sess = {
   secret: "Super secret secret",
@@ -35,8 +34,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(routes);
 
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () =>
-    console.log("Server listening on: http://localhost:" + PORT)
+app.listen(process.env.PORT || 3006, function () {
+  console.log(
+    "Express server listening on port %d in %s mode",
+    this.address().port,
+    app.settings.env
   );
 });
