@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Application allowing one to use, and post to a tech blog website",
   "main": "script.js",
+  "engines": {
+    "node": "15.x",
+    "npm": "7.x"
+  },
   "scripts": {
     "start": "node server.js",
     "watch": " nodemon server.js",
@@ -20,7 +24,6 @@
     "nodemon": "^2.0.7",
     "sequelize": "^6.6.2"
   },
-  "devDependencies": {},
   "author": "Mario Cabrera",
   "license": "ISC"
 }
