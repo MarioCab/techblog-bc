@@ -15,6 +15,8 @@ const seedAll = async () => {
 
   await seedComment();
   console.log("/n seed comment success");
+
+  console.log("/n all seeding successful!");
   
   process.exit(0);
 };
