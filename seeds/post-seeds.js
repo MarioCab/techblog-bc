@@ -1,17 +1,12 @@
 const { Posts } = require("../Models");
 
-const testPosts = [
+const testPosts = 
   {
-    title: "Wowzers, a blog post!",
-    body: "I sure do hope it works!",
+    title: "Welcome!",
+    body: "This blog site is just a aplce to dump your mind. Say whatevers clouding up your noggin!",
     user_id: 1,
   },
-  {
-    title: "I feel smart",
-    body: "Like look what Im able to do while laying on my couch at 10pm",
-    user_id: 2,
-  },
-];
+;
 
 const seedPosts = () => Posts.bulkCreate(testPosts);
 
