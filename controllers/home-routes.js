@@ -5,8 +5,8 @@ const { Posts, User, Comment } = require("../Models");
 
 // get posts
 
-router.get("/", (req, res) => {
-  Posts.findAll({
+router.get("/", async (req, res) => {
+  await Posts.findAll({
     attributes: ["id", "title", "body"],
     include: [
       {
@@ -41,8 +41,8 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
-router.get("/post/:id", (req, res) => {
-  Posts.findOne({
+router.get("/post/:id", async (req, res) => {
+  await Posts.findOne({
     where: {
       id: req.params.id,
     },
