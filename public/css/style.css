@@ -45,6 +45,10 @@ body {
   background-color: rgb(214, 205, 205);
 }
 
+.card-body {
+  color: black;
+}
+
 #site-title,
 h4 {
   text-align: center;
@@ -58,4 +62,41 @@ h4 {
 #comment-input,
 #comment-submit {
   text-align: center;
+}
+
+#dash-title,
+#ifNoPost {
+  text-align: center;
+}
+
+#create-post {
+  font-size: 25px;
+  border: black solid thin;
+  padding: 5px;
+  background-color: lightgrey;
+}
+
+.title {
+  text-align: center;
+}
+
+#back {
+  font-size: 20px;
+  border: black solid thin;
+  background-color: lightgrey;
+}
+
+.new-post-form,
+.edit-post-form {
+  text-align: center;
+}
+
+#make-post-body {
+  width: 500px;
+  height: 100px;
+  flex-wrap: wrap;
+}
+
+#post-title {
+  width: 400px;
 }

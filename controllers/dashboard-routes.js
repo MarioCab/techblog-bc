@@ -34,7 +34,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/edit/:id", (req, res) => {
-  Post.findOne({
+  Posts.findOne({
     where: {
       id: req.params.id,
     },
@@ -73,16 +73,16 @@ router.get("/edit/:id", (req, res) => {
     });
 });
 
-router.get("/create/", (req, res) => {
-  Post.findAll({
+router.get("/create", (req, res) => {
+  Posts.findAll({
     where: {
       user_id: req.session.user_id,
     },
-    attributes: ["id", "title", "created_at", "body"],
+    attributes: ["id", "title", "body"],
     include: [
       {
         model: Comment,
-        attributes: ["id", "text", "post_id", "user_id", "created_at"],
+        attributes: ["id", "text", "post_id", "user_id"],
         include: {
           model: User,
           attributes: ["username"],

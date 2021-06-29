@@ -1,29 +1,26 @@
 <section>
-  <a href="/dashboard">Go Back</a>
+  <a href="/dashboard" id="back">Go Back</a>
   <h2 class="title">New Post Creation</h2><hr />
 
   <form class="new-post-form">
     <div>
-      <label for="post-title">title:</label>
-      <input
-        class="input"
-        type="text"
-        id="post-title"
-        name="post-title"
-        placeholder="Post Title"
-      />
+      <label for="post-title"><b>Title:</b></label>
+      <br />
+
+      <input class="input" type="text" id="post-title" name="post-title" />
     </div>
+
+    <br />
+
     <div>
-      <label for="post-content">Post body</label>
-      <input
-        class="textarea is-large"
-        id="post-content"
-        name="post-content"
-        placeholder="Post Body"
-      />
+      <label for="post-content"><b>Body:</b></label>
+      <br />
+      <textarea id="make-post-body" class="input" name="post-body"></textarea>
     </div>
+    <br />
+
     <button type="submit">Submit Post</button>
   </form>
 </section>
 
-<script src="/public/js/create-post.js"></script>
+<script src="/js/create-post.js"></script>
