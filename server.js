@@ -34,10 +34,16 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(routes);
 
-app.listen(process.env.PORT || 3006, function () {
-  console.log(
-    "Express server listening on port %d in %s mode",
-    this.address().port,
-    app.settings.env
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () =>
+    console.log("Server listening on: http://localhost:" + PORT)
   );
 });
+
+// app.listen(process.env.PORT || 3006, function () {
+//   console.log(
+//     "Express server listening on port %d in %s mode",
+//     this.address().port,
+//     app.settings.env
+//   );
+// });
