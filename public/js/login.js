@@ -15,7 +15,6 @@ const loginForm = async (event) => {
         document.location = "/";
       }, 1000);
     } else {
-      return(console.error();)
       alert("Epic Fail");
     }
   }
